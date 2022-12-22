@@ -6,6 +6,8 @@ const onBody = document.querySelector('body');
 onStart.addEventListener('click', changeColor);
 onStop.addEventListener('click', stopChangeColor);
 
+let timerId = null;
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 };
