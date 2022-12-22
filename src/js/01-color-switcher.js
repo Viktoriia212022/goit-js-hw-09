@@ -17,7 +17,7 @@ function getRandomHexColor() {
 function changeColor() {
   onStart.setAttribute('disabled', 'true');
   onStop.removeAttribute('disabled');
-  timer = setInterval(() => {
+  const timer = setInterval(() => {
     onBody.style.backgroundColor = getRandomHexColor();
   }, 1000);
 }

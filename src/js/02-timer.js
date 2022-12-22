@@ -35,7 +35,7 @@ const options = {
 
 function startTimerClick(data) {
   
- timerId = setInterval(() => {
+ const timerId = setInterval(() => {
     const todayDate = new Date();
     const diff = data - todayDate;
     // const { days, hours, minutes, seconds } = convertMs(diff);
